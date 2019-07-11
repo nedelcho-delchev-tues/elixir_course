@@ -1,0 +1,39 @@
+lst=["Alice Addison", "Bob Benetton"]
+Enum.map(lst, fn i ->  
+    String.split(i, " ")
+    end
+)
+//[["Alice", "Addison"], ["Bob", "Benetton"]]
+
+lst=["An example sentence", "Another sentence", "Third sentence"]
+Enum.filter(lst, fn s -> 
+    res=String.contains? s, "a"
+    if res==true do
+        false
+    else true
+    end
+end)
+
+lst=[[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+Enum.map(lst, fn i ->
+    Enum.map(i, fn n ->
+        n*2
+    end)
+end)
+
+f=fn a, b, c ->
+    if a==0 do
+        if b==0 do "FizzBuzz"
+        else "Fizz"
+        end
+    else if b==0 do
+            "Buzz"
+        else c
+        end
+    end
+end
+f.(0, 0, 5)
+f.(0, 1, 2)
+f.(1, 0, 2)
+f.(1, 1, "Test")
+
