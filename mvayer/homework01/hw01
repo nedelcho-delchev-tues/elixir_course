@@ -1,0 +1,32 @@
+Task1:??
+Enum.each(a , fn item -> String.split(item) end)
+
+Task2:
+
+iex()> c=["An example sentence", "Another sentence", "Third sentence"]
+["An example sentence", "Another sentence", "Third sentence"]
+iex()> Enum.filter(c , fn item ->                 
+...()> if item =~ "a" do
+...()> false
+...()> else
+...()> true
+...()> end
+...()> end)
+["Another sentence", "Third sentence"]
+
+Task3:
+
+Task4:
+
+iex(74)> cond do             
+...(74)> z==0 and x==0 ->    
+...(74)> "buzzfuzz"          
+...(74)> x != 0 and z != 0 ->
+...(74)> c                   
+...(74)> z==0 ->             
+...(74)> "fuzz"
+...(74)> x==0 ->
+...(74)> "buzz"
+...(74)> end
+
+
