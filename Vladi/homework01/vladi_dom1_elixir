@@ -1,0 +1,29 @@
+ list=["Alice Addison", "Bob Benetton"]
+ Enum.map(list, fn(x) -> String.split(x," ") end) 
+----------------------
+
+lst=["An example sentence", "Another sentence", "Third sentence"]
+Enum.filter(lst, fn b -> 
+    res=String.contains? b, "a"
+    if res==true do
+        false
+    else true
+    end
+end)
+----------------------
+list=[[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+Enum.map(list,fn x-> Enum.map(x,fn y-> y*2 end)end)
+------------------------
+f=fn (a, b, c)->
+    if a==0 do
+        if b==0 do "FizzBuzz"
+        else "Fizz"
+        end
+    else if b==0 do
+            "Buzz"
+        else c
+        end
+    end
+end
+
+-------------------
