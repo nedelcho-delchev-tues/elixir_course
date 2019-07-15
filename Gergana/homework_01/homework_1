@@ -4,6 +4,16 @@ listt = ["Alice Addison", "Bob Benetton"]
 Enum.map(listt, fn a ->
 String.split(a, " ") end)
 
+Task02
+
+listt=["An example sentence", "Another sentence", "Third sentence"]
+Enum.filter(lst, fn l -> 
+    ot=String.contains? l, "a"
+    if ot==true do false
+    else true
+    end 
+ end)
+ 
 Task03
 
 listt=[[1, 2, 3], [4, 5, 6], [7, 8, 9]]
