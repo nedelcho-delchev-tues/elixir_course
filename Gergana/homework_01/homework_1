@@ -13,3 +13,17 @@ Enum.map(i, fn n -> n*2 end)
 
 Task04
 
+a = 0
+b = 1
+c = 5
+fn (a, b, c)->
+    if a==0 do
+        if b==0 do "FizzBuzz"
+        else "Fizz"
+        end
+    else if b==0 do
+            "Buzz"
+        else c
+        end
+    end
+end
