@@ -1,4 +1,4 @@
- list=["Alice Addison", "Bob Benetton"]
+gi list=["Alice Addison", "Bob Benetton"]
  Enum.map(list, fn(x) -> String.split(x," ") end) 
 ----------------------
 

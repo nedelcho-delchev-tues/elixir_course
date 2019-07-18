@@ -1,0 +1,11 @@
+defmodule Fibonacci 
+do
+
+def pr(0) 
+    do 0 end
+def pr(1) 
+    do 1 end
+def pr(n) 
+    do pr(n-1)+pr(n-2)
+end
+end
